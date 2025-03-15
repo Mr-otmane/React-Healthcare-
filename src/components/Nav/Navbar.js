@@ -1,14 +1,19 @@
 import React from "react";
 import { Navbar, Container, NavDropdown, Collapse, Nav } from "react-bootstrap";
+import "./Nav.css";
+import logo from '../../Assists/logo.png'
+
 const Navbars = () => {
   return (
-    <Navbar expand="lg" className="bg-body-tertiary">
+    <Navbar expand="lg" >
       <Container>
-        <Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
+        <Navbar.Brand >
+            <img src={logo} title="logo"/>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link className="active">Home</Nav.Link>
             <NavDropdown title="Pages" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Our Team</NavDropdown.Item>
@@ -36,9 +41,10 @@ const Navbars = () => {
             </NavDropdown>
             <Nav.Link>Contact us</Nav.Link>
             <Nav.Link>Search</Nav.Link>
-            <Nav.Link>icon + (+212) 762283014</Nav.Link>
-            <Nav.Link><button>Contact Us</button></Nav.Link>
-            
+            <Nav.Link>icon + (+21) 762283014</Nav.Link>
+            <Nav.Link>
+              <button>contact us <span> > </span></button>
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
