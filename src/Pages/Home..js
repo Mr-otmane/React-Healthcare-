@@ -13,7 +13,7 @@ const Home = () => {
             <h5>We Provide All Health Care Solution</h5>
             <h2>Protect Your Health And Take Care To Of Your Health</h2>
             <button>
-              <a href="#">Read More</a>{" "}
+              <a href="#">Read More</a>
             </button>
             <span>+</span>
           </div>

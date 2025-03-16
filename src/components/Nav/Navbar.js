@@ -1,14 +1,16 @@
 import React from "react";
 import { Navbar, Container, NavDropdown, Collapse, Nav } from "react-bootstrap";
 import "./Nav.css";
-import logo from '../../Assists/logo.png'
+import logo from "../../Assists/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPhone, faSearch,  } from "@fortawesome/free-solid-svg-icons";
 
 const Navbars = () => {
   return (
-    <Navbar expand="lg" >
+    <Navbar expand="lg">
       <Container>
-        <Navbar.Brand >
-            <img src={logo} title="logo"/>
+        <Navbar.Brand>
+          <img src={logo} title="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -40,10 +42,14 @@ const Navbars = () => {
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link>Contact us</Nav.Link>
-            <Nav.Link>Search</Nav.Link>
-            <Nav.Link>icon + (+21) 762283014</Nav.Link>
+            <Nav.Link><FontAwesomeIcon icon={faSearch} /></Nav.Link>
             <Nav.Link>
-              <button>contact us <span> > </span></button>
+              <FontAwesomeIcon icon={faPhone} className="phone" />
+              (+21) 762283014</Nav.Link>
+            <Nav.Link>
+              <button>
+                contact us <span> > </span>
+              </button>
             </Nav.Link>
           </Nav>
         </Navbar.Collapse>

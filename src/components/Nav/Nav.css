@@ -14,14 +14,17 @@ nav .navbar-nav a {
   letter-spacing: 1px;
   margin-right: 10px;
   font-size: 17px;
-  transition: .3s ease all;
+  transition: 0.3s ease all;
 }
-nav .navbar-nav a:hover ,
+nav .navbar-nav a:hover,
 nav .navbar-nav a:focus {
-    color: var(--orange-color) !important;
+  color: var(--orange-color) !important;
 }
 nav .navbar-nav .active {
   color: var(--orange-color) !important;
+}
+nav .navbar-nav svg.phone {
+  margin-right: 8px;
 }
 nav .navbar-nav button {
   background-color: var(--btn-color);
@@ -36,7 +39,7 @@ nav .navbar-nav button {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 nav .navbar-nav button span {
   background-color: #fff;
@@ -49,8 +52,8 @@ nav .navbar-nav button span {
   margin-left: 15px;
 }
 nav .navbar-nav button:hover {
-    background-color: rgb(66, 66, 175);
-    border: 1px solid rgb(66, 66, 175);
+  background-color: rgb(66, 66, 175);
+  border: 1px solid rgb(66, 66, 175);
 }
 .navbar-nav .dropdown-menu {
   position: static;
@@ -58,7 +61,6 @@ nav .navbar-nav button:hover {
   border: 1px solid #fff;
   border-radius: 0px;
   width: 200px;
- 
 }
 
 .navbar-nav .dropdown-menu li {
@@ -71,7 +73,6 @@ nav .navbar-nav button:hover {
   font-size: 14px;
   line-height: 30px !important;
   position: relative;
-  
 }
 /* .navbar-nav .dropdown-menu li::before{
     position: absolute;
@@ -82,23 +83,25 @@ nav .navbar-nav button:hover {
     height: 4px;
     background-color: var(--main-color);
 } */
-.navbar-nav .dropdown-menu a:hover{
-    color: var(--btn-color) !important;
+.navbar-nav .dropdown-menu a:hover {
+  color: var(--btn-color) !important;
 }
-[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
-    cursor: pointer;
-    background-color: var(--btn-color);
-    border: 1px solid var(--btn-color);
-    border-radius: 0px;
-}
-
-@media only screen and (max-width : 992px){
-    nav .navbar-nav .dropdown-menu {
-        width: 100% !important;
-    }
-    nav .navbar-nav button {
-        margin-top: 0px;
-        width: 100%;
-    }
+[type="button"]:not(:disabled),
+[type="reset"]:not(:disabled),
+[type="submit"]:not(:disabled),
+button:not(:disabled) {
+  cursor: pointer;
+  background-color: var(--btn-color);
+  border: 1px solid var(--btn-color);
+  border-radius: 0px;
 }
 
+@media only screen and (max-width: 992px) {
+  nav .navbar-nav .dropdown-menu {
+    width: 100% !important;
+  }
+  nav .navbar-nav button {
+    margin-top: 0px;
+    width: 100%;
+  }
+}
