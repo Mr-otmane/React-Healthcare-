@@ -60,7 +60,6 @@ input {
   font-family: "Tajawal";
 }
 
-
 footer img.footerlogo {
   width: 100px;
   height: 50px;
@@ -105,23 +104,40 @@ footer h2 {
 footer ul {
   margin-top: 20px;
 }
-footer ul li{
+footer ul li {
   margin-top: 10px;
 }
-footer ul li a{
+footer ul li a {
   color: #333;
   font-size: 16px;
   letter-spacing: 1px;
 }
-footer form{
+footer form {
   margin: 15px 0px;
 }
-footer form input{
+footer form input {
   border: 1px solid #ccc;
   margin: 10px 0px;
   width: 100%;
 }
-footer form button{
+footer form button {
   width: 100%;
-  background-color: var(--orange-color);
+  background-color: var(--orange-color) !important;
+  border: 1px solid var(--orange-color) !important;
+  color: #fff;
+}
+footer ul.social li{
+  display: inline-block;
+  margin-right: 20px;
+  color: #fff;
+}
+footer .footer-bottom{
+  text-align: center;
+  margin-top: 25px;
+  padding: 10px 0px;
+  border-top: 1px solid #ccc;
+}
+footer .footer-bottom span{
+  display: block;
+  margin-top: 10px;
 }
