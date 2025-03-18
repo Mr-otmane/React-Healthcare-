@@ -59,11 +59,12 @@ input {
   font-size: 16px;
   font-family: "Tajawal";
 }
+/* start css to the footer */
 
 footer img.footerlogo {
-  width: 100px;
-  height: 50px;
-  margin: 15px 0px;
+  width: auto;
+  height: 40px;
+  margin: 20px 0px;
 }
 footer p {
   font-size: 17px;
@@ -126,18 +127,18 @@ footer form button {
   border: 1px solid var(--orange-color) !important;
   color: #fff;
 }
-footer ul.social li{
+footer ul.social li {
   display: inline-block;
   margin-right: 20px;
   color: #fff;
 }
-footer .footer-bottom{
+footer .footer-bottom {
   text-align: center;
   margin-top: 25px;
   padding: 10px 0px;
   border-top: 1px solid #ccc;
 }
-footer .footer-bottom span{
+footer .footer-bottom span {
   display: block;
   margin-top: 10px;
 }
