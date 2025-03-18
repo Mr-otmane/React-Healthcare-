@@ -1,6 +1,7 @@
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
+import './Banner.css';
 
 const Banner = () => {
   return (
