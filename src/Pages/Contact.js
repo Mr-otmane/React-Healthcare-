@@ -1,10 +1,9 @@
 import React from "react";
 import Banner from "../components/Nav/Banner/Banner";
-import { faMap } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faGlobe, faHeart, faMap, faMobile } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import './Contact.css'
-
-
+import "./Contact.css";
+import FormContact from "./FormContact";
 
 const Contact = () => {
   return (
@@ -14,6 +13,9 @@ const Contact = () => {
         <div className="container">
           <div className="row">
             <div className="col-lg-6 col-md-6">
+
+                <FormContact/>
+
               <form>
                 <div className="form-control">
                   <input placeholder="Your Name" />
@@ -45,6 +47,23 @@ const Contact = () => {
                     Location
                   </li>
                   <hr />
+                  <p>2005 Stokes Isle Apt. 896, Venaville 10010, USA</p>
+                  <li>
+                    <FontAwesomeIcon icon={faEnvelope} />
+                    Email & Phone
+                  </li>
+                  <hr />
+                  <p>otmaneanna2020@gmail.com</p>
+                  <p>0762283014</p>
+                  <li>
+                    <FontAwesomeIcon icon={faGlobe} />
+                   Follow Us
+                  </li>
+                  <ul>
+                    <li><FontAwesomeIcon icon={faHeart}/></li>
+                    <li><FontAwesomeIcon icon={faGlobe}/></li>
+                    <li><FontAwesomeIcon icon={faMobile}/></li>
+                  </ul>
                 </div>
               </div>
             </div>

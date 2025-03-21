@@ -23,6 +23,7 @@ const Navbars = () => {
             <link to="/home" className="active">
               Home
             </link>
+
             <NavDropdown title="Pages" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">About Us</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.1">Our Team</NavDropdown.Item>
